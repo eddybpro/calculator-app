@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root{
+    /* THEME 1 */
+    --FT-main-background : hsl(222, 26%, 31%);
+    --FT-toggle-background-keypad-background : hsl(223, 31%, 20%);
+    --FT-screen-background : hsl(224, 36%, 15%);
+
+    --FT-key-background-del : hsl(225, 21%, 49%);
+    --FT-key-shadow-del: hsl(224, 28%, 35%);
+
+    --FT-key-background-toggle-equal : hsl(6, 63%, 50%);
+    --FT-key-shadow-equal: hsl(6, 70%, 34%);
+
+    --FT-key-background-num: hsl(30, 25%, 89%);
+    --FT-key-shadow-num: hsl(28, 16%, 65%);
+
+    --FT-txt-grayish-blue: hsl(221, 14%, 31%);
+    --FT-txt-White: hsl(0, 0%, 100%);
+
+    /* THEME 2 */
+
+    --ST-main-background: hsl(0, 0%, 90%);
+    --ST-toggle-background-keypad-background: hsl(0, 5%, 81%);
+    --ST-screen-background: hsl(0, 0%, 93%);
+
+
+    --ST-key-background-del: hsl(185, 42%, 37%);
+    --ST-key-shadow-del: hsl(185, 58%, 25%);
+
+    --ST-key-background-toggle-equal: hsl(25, 98%, 40%);
+    --ST-key-shadow-equal: hsl(25, 99%, 27%);
+
+    --ST-key-background-num: hsl(45, 7%, 89%);
+    --ST-key-shadow-num: hsl(35, 11%, 61%);
+
+    --ST-txt-grayish-yellow: hsl(60, 10%, 19%);
+    --ST-txt-White: hsl(0, 0%, 100%);
+
+    /* THEME 3 */
+
+    --TT-main-background: hsl(268, 75%, 9%);
+    --TT-toggle-background-keypad-background-screen-background: hsl(268, 71%, 12%);
+
+    --TT-key-background-del: hsl(281, 89%, 26%);
+    --TT-key-shadow-del: hsl(285, 91%, 52%);
+
+    --TT-key-background-toggle-equal: hsl(176, 100%, 44%);
+    --TT-key-shadow-equal: hsl(177, 92%, 70%);
+
+    --TT-key-background-num: hsl(268, 47%, 21%);
+    --TT-key-shadow-num: hsl(290, 70%, 36%);
+
+    --TT-txt-Light-yellow: hsl(52, 100%, 62%);
+    --TT-Very-dark-blue: hsl(198, 20%, 13%);
+    --TT-txt-White: hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.first-theme{
+    --FT-main-background : hsl(222, 26%, 31%);
+    --FT-toggle-background-keypad-background : hsl(223, 31%, 20%);
+    --FT-screen-background : hsl(224, 36%, 15%);
+
+    --FT-key-background-del : hsl(225, 21%, 49%);
+    --FT-key-shadow-del: hsl(224, 28%, 35%);
+
+    --FT-key-background-toggle-equal : hsl(6, 63%, 50%);
+    --FT-key-shadow-equal: hsl(6, 70%, 34%);
+
+    --FT-key-background-num: hsl(30, 25%, 89%);
+    --FT-key-shadow-num: hsl(28, 16%, 65%);
+
+    --FT-txt-grayish-blue: hsl(221, 14%, 31%);
+    --FT-txt-White: hsl(0, 0%, 100%);
+
+}
+
+.second-theme{
+    --FT-main-background : var(--ST-main-background);
+    --FT-toggle-background-keypad-background : var(--ST-toggle-background-keypad-background);
+    --FT-screen-background : var(--ST-screen-background);
+
+    --FT-key-background-del : var(--ST-key-background-del);
+    --FT-key-shadow-del: var(--ST-key-shadow-del);
+
+    --FT-key-background-toggle-equal :var(--ST-key-background-toggle-equal);
+    --FT-key-shadow-equal: var(--ST-key-shadow-equal);
+
+    --FT-key-background-num: var(--ST-key-background-num);
+    --FT-key-shadow-num: var(--ST-key-shadow-num);
+
+    --FT-txt-White: var(--ST-txt-grayish-yellow);
+}
+
+.third-theme{
+    
+    --FT-main-background : var(--TT-main-background);
+    --FT-toggle-background-keypad-background : var(--TT-toggle-background-keypad-background-screen-background);
+    --FT-screen-background : var(--TT-toggle-background-keypad-background-screen-background);
+
+    --FT-key-background-del : var(--TT-key-background-del);
+    --FT-key-shadow-del: var(--TT-key-shadow-del);
+
+    --FT-key-background-toggle-equal :var(--TT-key-background-toggle-equal);
+    --FT-key-shadow-equal: var(--TT-key-shadow-equal);
+
+    --FT-key-background-num: var(--TT-key-background-num);
+    --FT-key-shadow-num: var(--TT-key-shadow-num);
+
+    --FT-txt-grayish-blue: var(--TT-txt-Light-yellow);
+    --FT-txt-White: var(--TT-txt-Light-yellow);
+}
+
+body{
+    background-color: var(--FT-main-background);
+}
+
+main{
+    min-height: 91vh;
+    background-color: var(--FT-main-background);
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.head{
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.logo{
+    color: var(--FT-txt-White);
+    font-size: 3.6rem;
+}
+
+.theme-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 2.5rem;
+}
+
+.theme-container p{
+    color: var(--FT-txt-White);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.theme-input-box{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.input-feild,
+.labels{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--FT-toggle-background-keypad-background);
+    border-radius: 2.5rem;
+    place-items: center;
+    padding: .1rem .2rem .3rem .2rem;
+    overflow: hidden;
+}
+
+.labels{
+    background-color: transparent;
+}
+
+label{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--FT-txt-White);
+}
+
+input[type='radio']{
+    display: grid;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-top: .25rem;
+    border-radius: 50%;
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    place-items: center;
+    transition: transform .2s ease-in-out;
+}
+
+input[type='radio']::before{
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--FT-key-background-toggle-equal);
+    transform: scale(0);
+}
+
+input[type='radio']:checked::before{
+    transform: scale(1);
+}
+
+#num-input{
+    font-size: 3.2rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 1rem 0 2rem;
+    border: none;
+    outline: none;
+    padding: 2rem 1rem;
+    border-radius: .8rem;
+    text-align: right;
+    background-color: var(--FT-screen-background);
+    color: var(--FT-txt-White);
+}
+
+.grid{
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    background-color: var(--FT-toggle-background-keypad-background);
+    border-radius: .8rem;
+    gap: 2rem;
+    padding: 2rem;
+    margin: auto;
+}
+
+.num{
+    background-color: var(--FT-key-background-num);
+    color: var(--FT-txt-grayish-blue);
+    box-shadow: inset 0px -6px 3px var(--FT-key-shadow-num);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    font-size: 3.2rem;
+    padding: 1.8rem .5rem;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.reset, .equal{
+    grid-column: span 2;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    font-size: 3.2rem;
+    padding: 1.8rem .5rem;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.del,
+.reset{
+    text-transform: uppercase;
+    background-color: var(--FT-key-background-del);
+    color: hsl(0, 0%, 100%);
+    box-shadow: inset 0px -6px 3px var(--FT-key-shadow-del);
+}
+
+.equal{
+    color: hsl(0, 0%, 100%);
+    background-color: var(--FT-key-background-toggle-equal);
+    box-shadow:inset 0px -6px 3px var(--FT-key-shadow-equal);
+}
+
+footer{
+    background-color: var(--FT-main-background);
+    text-align: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.attribution{
+    max-width: 80rem;
+    font-size: 1.6rem;
+    color: var(--TT-Very-dark-blue);
+    line-height: 2.25rem;
+    margin: auto;
+}
+
+.attribution > a{
+    text-decoration: none;
+    color: var(--FT-txt-White);
+}
+
+@media(hover:hover){
+    input[type='radio']:hover,
+    .num:hover,
+    .reset:hover,
+    .equal:hover{
+        filter: brightness(120%);
+    }
+}

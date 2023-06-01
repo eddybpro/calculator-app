@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- ---CSS LINK --- -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="head">
+      <h1 class="logo">calc</h1>
+      <div class="theme-container">
+        <p>theme</p>
+        <div class="theme-input-box">
+          <div class="labels">
+            <label for="f-theme">1</label>
+            <label for="s-theme">2</label>
+            <label for="t-theme">3</label>
+          </div>
+
+          <div class="input-feild">
+            <input type="radio" name="theme-toggler"
+            id="f-theme"
+            class="first-input"
+            checked>
+            <input type="radio" name="theme-toggler"
+            id="s-theme"
+            class="second-input">
+
+            <input type="radio" name="theme-toggler" class="third-input"
+            id="t-theme">
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="text"  id="num-input">
+
+    <div class="grid">
+      <button class="num" value="7">7</button>
+      <button class="num" value="8">8</button>
+      <button class="num" value="9">9</button>
+      <button class="num del">del</button>
+
+      <button class="num" value="4">4</button>
+      <button class="num" value="5">5</button>
+      <button class="num" value="6">6</button>
+      <button class="num plus" value="+">+</button>
+
+      <button class="num" value="1">1</button>
+      <button class="num" value="2">2</button>
+      <button class="num" value="3">3</button>
+      <button class="num minus" value="-">-</button>
+
+      <button class="num dot" value=".">.</button>
+      <button class="num" value="0">0</button>
+      <button class="num devid" value="/">/</button>
+      <button class="num multi" value="*">x</button>
+
+      <button class="reset">reset</button>
+      <button class="equal">=</button>
+    </div>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/eddybpro">Eddybpro</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
